@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5842141115532159105}
   - component: {fileID: 5842141115532159110}
   m_Layer: 0
-  m_Name: Shadows
+  m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -98,6 +98,9 @@ GameObject:
   - component: {fileID: 5842141115947406058}
   - component: {fileID: 5842141115947406069}
   - component: {fileID: 5842141115947406068}
+  - component: {fileID: 1329421333820674438}
+  - component: {fileID: 4734303318223095063}
+  - component: {fileID: 2777740377591029701}
   m_Layer: 0
   m_Name: Slime
   m_TagString: Untagged
@@ -235,3 +238,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
+--- !u!114 &1329421333820674438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5842141115947406071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a9275db01964ff4ab67c9836f95a046, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 3
+  deathVFXPrefab: {fileID: 8378183710474847989, guid: 902068b558812bb42a30a59735ecbd0d, type: 3}
+--- !u!114 &4734303318223095063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5842141115947406071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61c12142347437a409199cc950c3759d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockBackTime: 0.2
+--- !u!114 &2777740377591029701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5842141115947406071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ad589bc845e6b74188143a660e1eb02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whiteFlashMat: {fileID: 2100000, guid: 891eaa0b00c375d4f8df2e6c04b3b981, type: 2}
+  restoreDefaultMatTime: 0.1
