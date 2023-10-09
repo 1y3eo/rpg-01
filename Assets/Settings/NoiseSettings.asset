@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PositionNoise:
   - X:
-      Frequency: 6.2
-      Amplitude: 0.39
+      Frequency: 6
+      Amplitude: 0.44
       Constant: 0
     Y:
       Frequency: 3.45
-      Amplitude: 0.16
+      Amplitude: 0.1
       Constant: 0
     Z:
       Frequency: 0
@@ -27,11 +27,11 @@ MonoBehaviour:
       Constant: 0
   - X:
       Frequency: 10
-      Amplitude: 0.8
+      Amplitude: 0.92
       Constant: 0
     Y:
       Frequency: 8.72
-      Amplitude: 0.5
+      Amplitude: 0.45
       Constant: 0
     Z:
       Frequency: 0
