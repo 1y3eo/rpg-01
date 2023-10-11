@@ -281,6 +281,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19b3d035aab160f438a2b7686c6f0e14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fullStaminaImage: {fileID: 21300000, guid: fe64821e1674fab4a803c803cff834a7, type: 3}
+  emptyStaminaImage: {fileID: 21300000, guid: 0508a800f7ee08a48ac203d145f41fc2, type: 3}
+  timeBetweenStaminaRefresh: 3
 --- !u!1 &6782345379906937338
 GameObject:
   m_ObjectHideFlags: 0

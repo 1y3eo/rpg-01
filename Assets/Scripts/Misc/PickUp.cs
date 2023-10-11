@@ -45,7 +45,7 @@ public class PickUp : MonoBehaviour
         else
         {
             moveDir = Vector3.zero;
-            moveSpeed = 0;
+            moveSpeed = 0f;
         }
     }
 
@@ -92,15 +92,14 @@ public class PickUp : MonoBehaviour
         {
             case PickUpType.GoldCoin:
                 EconomyManager.Instance.UpdateCurrentGold();
-                Debug.Log("gold coin");
                 break;
             case PickUpType.HealthGlobe:
                 PlayerHealth.Instance.HealPlayer();
-                Debug.Log("health Globe");
                 break;
             case PickUpType.StaminaGlobe:
                 Stamina.Instance.RefreshStamina();
-                Debug.Log("stamina Globe");
+                break;
+            default:
                 break;
         }
     }

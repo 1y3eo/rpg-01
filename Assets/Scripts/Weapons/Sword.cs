@@ -74,7 +74,7 @@ public class Sword : MonoBehaviour, IWeapon
     private void MouseFollowedOffset()
     {
         Vector3 mousePos = Input.mousePosition;
-        Vector3 playerScreenPoint = Camera.main.ScreenToWorldPoint(PlayerController.Instance.transform.position);
+        Vector3 playerScreenPoint = Camera.main.WorldToScreenPoint(PlayerController.Instance.transform.position);
 
         float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
 
@@ -89,5 +89,4 @@ public class Sword : MonoBehaviour, IWeapon
             weaponColider.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
-
 }
